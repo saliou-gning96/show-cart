@@ -1,0 +1,10 @@
+.item-cart {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0px;
+
+    .price {
+        text-align: right;
+    }
+}

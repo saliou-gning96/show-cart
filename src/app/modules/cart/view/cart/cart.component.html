@@ -1,0 +1,10 @@
+<div class="cart">
+    <p>Facture</p>
+
+    <ng-container *ngFor="let data of cartData">
+        <app-cart-item [tva]="getItemTva(data)" [quantity]="data.quantity" [product]="data.product"></app-cart-item>
+    </ng-container>
+
+    <div>total Tva: {{ totalTva | number }}</div>
+    <div>Total: {{ totalPrice | number }}</div>
+</div>
