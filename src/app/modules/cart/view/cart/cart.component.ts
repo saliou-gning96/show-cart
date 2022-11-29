@@ -31,10 +31,9 @@ export class CartComponent implements OnInit {
     if (item.isImported) {
       tva = tva + (item.product?.price * item.quantity) * 0.05;
     }
-
+    
     tva = Number(tva.toFixed(2));
-    console.log(tva, Math.ceil(tva * 20) / 20)
-    return Math.ceil(tva * 20) / 20;
+    return tva;
   }
 
   get totalTva(): number {
